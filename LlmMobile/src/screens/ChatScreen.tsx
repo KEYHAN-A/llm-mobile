@@ -74,7 +74,7 @@ export function ChatScreen() {
       </View>
 
       {/* Model Status */}
-      <ModelStatusBar onLoad={load} />
+      <ModelStatusBar onLoad={() => load()} />
 
       {/* Messages */}
       <MessageList conversationId={activeConversationId} />
